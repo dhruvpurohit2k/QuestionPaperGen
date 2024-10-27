@@ -1,4 +1,4 @@
-#form{
+#form {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -7,42 +7,96 @@
   grid-area: 2/2/3/3;
   flex-direction: column;
   align-items: center;
-  padding:30px;
-  *{
-    margin:10px 0px;
+  padding: 30px;
+  * {
+    margin: 10px 0px;
   }
-  #addFormButton{
+  #addFormButton {
     font-size: 3rem;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid green;
-    color:green;
+    color: green;
   }
-  #addFormButton:hover{
+  #addFormButton:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 10px 1px rgba(0, 128, 0, 0.409);
-  } 
+  }
 }
 
-#form #addFormDialog{
+#form #addFormDialog {
   border: none;
   height: 50%;
   width: 50%;
 }
 
-.normalQuestion{
+.normalQuestion {
   width: 100%;
   margin-left: 100px;
   margin-right: 100px;
-  padding:10px;
+  padding: 10px;
   font-size: 1.5rem;
   text-transform: bold;
-  textarea{
+  textarea {
     width: 100%;
     height: 15ch;
     font-size: 1.2rem;
     padding: 10px;
     outline: none;
     overflow: scroll;
+  }
+}
+
+.multipleChoice {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 5);
+  column-gap: 30px;
+  p:first-child {
+    grid-area: 1/1/2/3;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  input {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .mcqoption{
+    font-size: 1rem;
+  }
+}
+.question{
+  font-size: 1.2rem;
+}
+textarea {
+  grid-area: 2/1/3/3;
+  height: 15ch;
+  padding: 5px;
+  font-size: 1rem;
+}
+.matchFollowing {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  button{
+    width: 60px;
+    align-self: center;
+    font-size: 2rem;
+    border: 2px solid green;
+    color:green;
+    padding:10px 20px;
+    text-align: center;
+    border-radius:10px;
+  }
+}
+.matchFollowingPairs{
+  display: flex;
+  justify-content: space-around;
+  .matchFollowingInput{
+    font-size: 1.2rem;
+    padding:5px;
   }
 }
