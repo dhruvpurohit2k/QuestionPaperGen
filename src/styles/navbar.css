@@ -1,0 +1,25 @@
+navbar{
+  display:flex;
+  height: 125px;
+  background-color: rgba(0, 143, 0, 0.586);
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  display: flex;
+  flex:auto;
+  grid-area: 1/1/2/4;
+  p{
+    color: white;
+    font-size: 3rem;
+  }
+  button{
+    margin-left:auto;
+    border: 2px solid green;
+    height: 40px;
+    padding: 10px;
+    margin-right:40px;
+    margin-top:40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: green;
+  }
+}
